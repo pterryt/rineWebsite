@@ -1,0 +1,24 @@
+/* Map.css */
+
+.text-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    font-family: Meiryo, sans-serif; /* Set font to Meiryo */
+    font-size: 10px; /* Adjust font size as needed */
+    color: white; /* Set text color */
+    text-align: center; /* Center the text */
+    filter: drop-shadow(-1px -1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(1px 1px 0 black) drop-shadow(0 0 5px black); /* Add shadow to create outline */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Optional: Adjust the background color of the icon */
+.text-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Set background color with transparency */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 4px 8px; /* Add padding to the icon */
+}
