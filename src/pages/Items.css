@@ -1,0 +1,18 @@
+/* Items.css */
+.items-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Arrange list items horizontally */
+    justify-content: center; /* Center list items horizontally */
+    gap: 30px; /* Add 30px space between list items */
+  }
+  
+  .item-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the same color as normal text */
+    font-size: 40px; /* Set font size to 20px */
+  }
+  
+  .item-link:visited {
+    color: inherit; /* Use the same color as normal text for visited links */
+  }

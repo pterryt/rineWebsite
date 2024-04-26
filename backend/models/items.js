@@ -128,6 +128,7 @@ const Item = sequelize.define('Item', {
 },
 {
   tableName: 'items',
+  timestamps: false
 }
 );
 

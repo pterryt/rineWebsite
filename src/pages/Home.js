@@ -4,7 +4,7 @@ import React from 'react';
 function Home() {
     return (
         <div>
-            <h1>L2Clementineようこそ！</h1>
+            <h1>L2日本DBようこそ！</h1>
         </div>
     );
 }

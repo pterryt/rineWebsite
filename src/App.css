@@ -52,7 +52,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333; /* Header background color */
+    background-image: linear-gradient(to right, #3c3c3c,#121212);
     padding: 0px 0px 0px 0px; /* Add padding to the top and bottom */
 }
 
@@ -66,7 +66,7 @@ header {
     color: #fff; /* Text color */
     text-decoration: none; /* Remove hyperlink underline */
     font-size: 16px;
-    padding: 10px 20px 10px 20px; /* Add padding to the buttons */
+    padding: 20px 20px 20px 20px; /* Add padding to the buttons */
     margin: 0 10px; /* Add marg,in between buttons */
     cursor: pointer;
     transition: box-shadow 0.3s; /* Smooth transition for box-shadow */
@@ -82,7 +82,7 @@ header {
 
 .icon {
     margin-right: auto; /* Pushes the icon to the far left */
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     margin: 2px 5px 0px 5px;
 }

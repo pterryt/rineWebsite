@@ -2,11 +2,10 @@ const fs = require('fs')
 const path = require('path')
 const Sequelize = require('sequelize')
 const db = {}
-const models = ('.')
+const models = path.join(__dirname)
 
 const sequelize = require('../db/connection')
 const basename = path.basename(__filename);
-// const { DataTypes } = Sequelize;
 
 fs
   .readdirSync(models)
@@ -14,7 +13,7 @@ fs
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
   })
   .forEach(function (file) {
-    const model = require(path.join(models, file))(sequelize, DataTypes); // Pass DataTypes object directly
+    const model = require(path.join(models, file));
     db[model.name] = model;
   });
 

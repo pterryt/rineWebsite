@@ -1,11 +1,13 @@
 // src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import icon from '../assets/temp_icon_3.png'; // Import the image
+
 
 function Navbar() {
     return (
         <nav className="navbar">
-            <img src="temp_icon_2.png" alt="Website Icon" className="icon" />
+            <img src={icon} alt="Website Icon" className="icon" />
             <Link to="/" className="nav-btn">ホーム</Link>
             <Link to="/items" className="nav-btn">アイテム</Link> {/* Main アイテム link */}
             {/* Add more links as needed */}
