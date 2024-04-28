@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -54,6 +53,7 @@ body {
 header {
     background-image: linear-gradient(to right, #3c3c3c,#121212);
     padding: 0px 0px 0px 0px; /* Add padding to the top and bottom */
+    margin:0px 0px 0px 0px;
 }
 
 .navbar {
@@ -65,9 +65,9 @@ header {
     border: none; /* Remove button border */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove hyperlink underline */
-    font-size: 16px;
-    padding: 20px 20px 20px 20px; /* Add padding to the buttons */
-    margin: 0 10px; /* Add marg,in between buttons */
+    font-size: 13px;
+    padding: 3px 20px 0px 20px; /* Add padding to the buttons */
+    margin: 0 5px; /* Add marg,in between buttons */
     cursor: pointer;
     transition: box-shadow 0.3s; /* Smooth transition for box-shadow */
     display: flex; /* Use flexbox */
@@ -77,12 +77,39 @@ header {
 }
 
 .nav-btn:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Lighter shadow on hover */
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.3); /* Lighter shadow on hover */
 }
 
 .icon {
     margin-right: auto; /* Pushes the icon to the far left */
-    height: 60px;
-    width: 60px;
-    margin: 2px 5px 0px 5px;
+    height: 37px;
+    width: 50px;
+    margin: 4px 10px 2px 5px;
+}
+
+input[type="search"] {
+    width: 200px;
+    padding: 5px;
+    background-color: #171717;
+    color: aliceblue;
+    border-radius: 8px; /* Add this line */
+
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    margin-left: 20px;
+}
+
+.iconText {
+    color: silver;
+    font-family: 'Meiryo', sans-serif;
 }

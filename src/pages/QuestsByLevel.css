@@ -1,32 +1,31 @@
-/* Items.css */
-.items-list {
+/* QuestsByLevel.css */
+.quests-list {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
-    padding-top: 5px;
+    padding-top: 10px;
     display: flex; /* Arrange list items horizontally */
     justify-content: center; /* Center list items horizontally */
-    gap: 30px; /* Add 30px space between list items */
-    font-size: 40px;
+    gap: 10px; /* Add 30px space between list items */
+    font-size: 22px;
     color: #d4d4d4;
   }
   
-  .item-link {
+  .quest-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Use the same color as normal text */
-    font-size: 40px; /* Set font size to 20px */
+    font-size: 22px; /* Set font size to 20px */
     color: #d4d4d4;
 
   }
   
-  .item-link:visited {
+  .quest-link:visited {
     color: #d4d4d4;
 ; /* Use the same color as normal text for visited links */
   }
 
-  .items-title {
+  .quests-title {
     padding-top: 100px;
-    padding-right: 35px;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     color:dodgerblue;
   }

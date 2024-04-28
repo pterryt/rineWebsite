@@ -58,8 +58,14 @@ router.get('/type/:category/:itemType', async (req, res) => {
 
   try {
     const items = await db.Item.findAll({
-      where: { [attribute]: itemType },
+      where: { [attribute]: itemType, for_npc: null, item_skill: null, is_premium: null, is_droppable: null},
       attributes: ['icon', 'name', 'pAtk', 'mAtk', 'pDef', 'mDef', 'crystal_type'],
+      include: [{
+        model: db.ItemDescription,
+        as: 'itemDescription',
+        attributes: ['japanese_name', 'japanese_description'],
+        required: false
+      }],
       raw: true
     });
     res.json(items);

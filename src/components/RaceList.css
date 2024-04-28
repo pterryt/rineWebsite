@@ -1,0 +1,15 @@
+.raceList {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.race-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    color: #d4d4d4
+}

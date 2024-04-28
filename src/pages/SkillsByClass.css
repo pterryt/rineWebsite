@@ -1,0 +1,35 @@
+/* SkillsByClass.css */
+.class-link {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set color to white */
+  }
+  
+  .class-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center list items horizontally */
+  }
+  
+  .class-list li {
+    position: relative; /* Enable absolute positioning for children */
+  }
+  
+  .class-list .level-0 {
+    /* Styles for level 0 classes */
+  }
+  
+  .class-list .level-1 {
+    /* Styles for level 1 classes */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .class-list .level-2 {
+    /* Styles for level 2 classes */
+    position: absolute;
+    left: calc(50% - 100px * var(--n));
+    transform: translateX(-50%);
+  }
+  
+  /* Repeat for each level, adjusting the left and transform properties as needed */

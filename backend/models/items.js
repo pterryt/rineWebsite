@@ -132,4 +132,11 @@ const Item = sequelize.define('Item', {
 }
 );
 
+Item.associate = function(models) {
+  Item.hasOne(models.ItemDescription, {
+    foreignKey: 'id',
+    as: 'itemDescription'
+  });
+};
+
 module.exports = Item;

@@ -68,6 +68,8 @@ function Map() {
                 animateZoom={false} // Disable animation during zoom
                 bounceAtZoomLimits={false} // Disable bouncing effect at zoom limits
                 boundsOptions={{ maxZoom: 5, minZoom: 3 }} // Disable zoom level adjustment
+                zoomControl={false} // Disable default zoom control
+                attributionControl={false} // Disable default attribution control
             >
                 <PrintCoordinates />
                 <ImageOverlay

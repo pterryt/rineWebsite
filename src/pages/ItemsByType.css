@@ -1,32 +1,24 @@
 /* Items.css */
-.items-list {
+.itemsBy-list {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
-    padding-top: 5px;
+    padding-top: 100px;
     display: flex; /* Arrange list items horizontally */
     justify-content: center; /* Center list items horizontally */
-    gap: 30px; /* Add 30px space between list items */
-    font-size: 40px;
+    gap: 10px; /* Add 30px space between list items */
+    font-size: 30px;
     color: #d4d4d4;
   }
   
-  .item-link {
+  .itemBy-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Use the same color as normal text */
-    font-size: 40px; /* Set font size to 20px */
+    font-size: 30px; /* Set font size to 20px */
     color: #d4d4d4;
 
   }
   
-  .item-link:visited {
+  .itemBy-link:visited {
     color: #d4d4d4;
 ; /* Use the same color as normal text for visited links */
-  }
-
-  .items-title {
-    padding-top: 100px;
-    padding-right: 35px;
-    text-align: center;
-    font-size: 25px;
-    color:dodgerblue;
   }
