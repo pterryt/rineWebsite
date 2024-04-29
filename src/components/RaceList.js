@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './RaceList.css'; // Import the CSS file
 
 // Define the races
-const races = ['Human', 'Elf', 'Dark Elf', 'Orc', 'Dwarf'];
+const races = ['ヒューマン', 'エルフ', 'ダークエルフ', 'オーク', 'ドワーフ'];
 
 function RaceList() {
   return (

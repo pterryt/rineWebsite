@@ -13,6 +13,7 @@ import Quests from './pages/QuestsByLevel';
 import Monsters from './pages/MonstersByLevel';
 import Skills from './pages/SkillsByClass';
 import Race from './pages/Race';
+import MonstersByLevelRange from './pages/MonstersByLevelRange';
 
 import './App.css'
 
@@ -40,6 +41,7 @@ function App() {
                     <Route path="/map" element={<Map />} />
                     <Route path="/quests" element={<Quests />} />
                     <Route path="/monsters" element={<Monsters />} />
+                    <Route path="/monsters/levels/:range" element={<MonstersByLevelRange />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/skills/:race" element={<Race />} /> {/* Route for each race */}
                   </Routes>

@@ -10,7 +10,7 @@ function ItemsByType() {
     const typeMapping = {
         'weapon': ['sword', 'blunt', 'dagger', 'bow', 'pole', 'dualfist', 'etc'],
         'armor': ['heavy', 'light', 'magic', 'etc'],
-        'other': ['Enchant', 'Potion', 'Arrows', 'Lures']
+        'etcitems': ['materials', 'recipes', 'enchant_scrolls', 'consumables']
     };
 
     const displayNameMapping = {
@@ -25,8 +25,10 @@ function ItemsByType() {
         'light': '軽装',
         'heavy': '重装',
         'magic': 'ローブ',
-        
-        // Add other mappings as needed
+        'materials': '材質',
+        'recipes': '製作図',
+        'enchant_scrolls': '強化スクロール',
+        'consumables': '消耗品',
     };
 
     // Get the item types for the current type

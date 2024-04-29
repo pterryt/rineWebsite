@@ -12,7 +12,7 @@ function Items() {
         <li>┊</li>
         <li><Link to="/items/types/armor" className="item-link">装備</Link></li>
         <li>┊</li>
-        <li><Link to="/items/types/other" className="item-link">その他</Link></li>
+        <li><Link to="/items/types/etcitems" className="item-link">その他</Link></li>
       </ul>
     </div>
   );

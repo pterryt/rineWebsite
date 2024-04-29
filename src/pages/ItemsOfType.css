@@ -1,12 +1,57 @@
 .table-header {
     text-align: left;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 
 table {
     margin: auto;
+    border: 1px solid rgba(192, 192, 192, 0.5); /* Half opacity silver border */
+    border-collapse: collapse; /* Add this line */
+    width: 100%; /* Take up full available space */
+    max-width: 90%; /* But no more than 80% of the screen width */
+    font-size: 10px;
+    margin-top: 50px;
 }
 
 table tr:nth-child(even) {
     background-color: black; /* Replace with the color you want */
+
+}
+table tr {
+    border: 1px solid rgba(192, 192, 192, 0.5); /* Half opacity silver border */
+    height: 32px;
+}
+
+.etcDescription {
+    width: 400px;
+}
+
+
+table.items-table td:nth-child(3) {
+    font-size: 0.8em; /* Adjust as needed */
+}
+
+.parent-container {
+    width: 100%; /* Take up full available space */
+    max-width: 80%; /* But no more than 80% of the screen width */
+    margin: auto; /* Center the container */
+}
+
+.wepIcon {
+  border: 2px solid #000; /* Change the color as needed */
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  margin: 0;
+
+}
+
+table tr td, table tr th {
+    max-height: 32px;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0px;
 }
