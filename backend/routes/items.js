@@ -86,6 +86,7 @@ router.get('/type/:category/:itemType', async (req, res) => {
       raw: true
     });
 
+    // probably remove this once we split 1h and 2h weapons
     const order = [null, 'D', 'C', 'B', 'A', 'S', 'S80', 'S84'];
     items.sort((a, b) => {
       return order.indexOf(a.crystal_type) - order.indexOf(b.crystal_type);

@@ -24,19 +24,19 @@ function Race() {
               <td colspan="2"><Link to={`/skills/${race}/Human Knight`}>ナイト</Link></td>
             </tr>
             <tr>
-              <td><Link to={`/skills/${race}/Treasure Hunter`}>トレジャー ハンター</Link></td>
+              <td><Link to={`/skills/${race}/Treasure Hunter`}>トレジャーハンター</Link></td>
               <td><Link to={`/skills/${race}/Hawkeye`}>ホークアイ</Link></td>
               <td><Link to={`/skills/${race}/Gladiator`}>グラディエーター</Link></td>
               <td><Link to={`/skills/${race}/Warlord`}>ウォーロード</Link></td>
               <td><Link to={`/skills/${race}/Paladin`}>パラディン</Link></td>
-              <td><Link to={`/skills/${race}/Dark Avenger`}>ダーク アベンジャー</Link></td>
+              <td><Link to={`/skills/${race}/Dark Avenger`}>ダークアベンジャー</Link></td>
             </tr>
             <tr>
               <td><Link to={`/skills/${race}/Adventurer`}>アドベンチャラー</Link></td>
               <td><Link to={`/skills/${race}/Sagittarius`}>サジタリウス</Link></td>
               <td><Link to={`/skills/${race}/Duelist`}>デュエリスト</Link></td>
               <td><Link to={`/skills/${race}/Dreadnought`}>ドレッドノート</Link></td>
-              <td><Link to={`/skills/${race}/Pheonix Knight`}>Pheonix Knight</Link></td>
+              <td><Link to={`/skills/${race}/Phoenix Knight`}>フェニックスナイト</Link></td>
               <td><Link to={`/skills/${race}/Hell Knight`}>ヘル ナイト</Link></td>
             </tr>
           </>
@@ -44,48 +44,48 @@ function Race() {
         {race === 'エルフ' && (
           <>
             <tr>
-              <td colspan="2"><Link to={`/skills/${race}/Elven Knight`}>エルヴン ナイト</Link></td>
-              <td colspan="2"><Link to={`/skills/${race}/Elven Scout`}>エルヴン スカウト</Link></td>
+              <td colspan="2"><Link to={`/skills/${race}/Elven Knight`}>エルヴンナイト</Link></td>
+              <td colspan="2"><Link to={`/skills/${race}/Elven Scout`}>エルヴンスカウト</Link></td>
             </tr>
             <tr>
-              <td><Link to={`/skills/${race}/Temple Knight`}>テンプル ナイト</Link></td>
+              <td><Link to={`/skills/${race}/Temple Knight`}>テンプルナイト</Link></td>
               <td><Link to={`/skills/${race}/Swordsinger`}>ソードシンガー</Link></td>
               <td><Link to={`/skills/${race}/Plainswalker`}>プレインズウォーカー</Link></td>
-              <td><Link to={`/skills/${race}/Silver Ranger`}>シルバー レンジャー</Link></td>
+              <td><Link to={`/skills/${race}/Silver Ranger`}>シルバーレンジャー</Link></td>
             </tr>
             <tr>
-              <td><Link to={`/skills/${race}/Evas Templar`}>エヴァス テンプラー</Link></td>
-              <td><Link to={`/skills/${race}/Sword Muse`}>ソード ミューズ</Link></td>
-              <td><Link to={`/skills/${race}/Wind Rider`}>ウィンド ライダー</Link></td>
-              <td><Link to={`/skills/${race}/Moonlight Sentinel`}>ムーンライト センティネル</Link></td>
+              <td><Link to={`/skills/${race}/Evas Templar`}>エヴァステンプラー</Link></td>
+              <td><Link to={`/skills/${race}/Sword Muse`}>ソードミューズ</Link></td>
+              <td><Link to={`/skills/${race}/Wind Rider`}>ウィンドライダー</Link></td>
+              <td><Link to={`/skills/${race}/Moonlight Sentinel`}>ムーンライトセンティネル</Link></td>
             </tr>
           </>
         )}
         {race === 'ダークエルフ' && (
           <>
             <tr>
-              <td colspan="2"><Link to={`/skills/${race}/Palus Knight`}>パラス ナイト</Link></td>
+              <td colspan="2"><Link to={`/skills/${race}/Palus Knight`}>パラスナイト</Link></td>
               <td colspan="2"><Link to={`/skills/${race}/Assassin`}>アサシン</Link></td>
             </tr>
             <tr>
-              <td><Link to={`/skills/${race}/Shillien Knight`}>シリエン ナイト</Link></td>
+              <td><Link to={`/skills/${race}/Shillien Knight`}>シリエンナイト</Link></td>
               <td><Link to={`/skills/${race}/Bladedancer`}>ブレードダンサー</Link></td>
-              <td><Link to={`/skills/${race}/Abyss Walker`}>アビス ウォーカー</Link></td>
-              <td><Link to={`/skills/${race}/Phantom Ranger`}>ファントム レンジャー</Link></td>
+              <td><Link to={`/skills/${race}/Abyss Walker`}>アビスウォーカー</Link></td>
+              <td><Link to={`/skills/${race}/Phantom Ranger`}>ファントムレンジャー</Link></td>
             </tr>
             <tr>
-              <td><Link to={`/skills/${race}/Shillien Templar`}>シリエン テンプラー</Link></td>
-              <td><Link to={`/skills/${race}/Spectral Dancer`}>スペクトラル ダンサー</Link></td>
-              <td><Link to={`/skills/${race}/Ghost Hunter`}>ゴースト ハンター</Link></td>
-              <td><Link to={`/skills/${race}/Ghost Sentinel`}>ゴースト センティネル</Link></td>
+              <td><Link to={`/skills/${race}/Shillien Templar`}>シリエンテンプラー</Link></td>
+              <td><Link to={`/skills/${race}/Spectral Dancer`}>スペクトラルダンサー</Link></td>
+              <td><Link to={`/skills/${race}/Ghost Hunter`}>ゴーストハンター</Link></td>
+              <td><Link to={`/skills/${race}/Ghost Sentinel`}>ゴーストセンティネル</Link></td>
             </tr>
           </>
         )}
         {race === 'オーク' && (
           <>
             <tr>
-              <td colspan="1"><Link to={`/skills/${race}/Orc Raider`}>オーク レイダー</Link></td>
-              <td colspan="1"><Link to={`/skills/${race}/Monk`}>オーク モンク</Link></td>
+              <td colspan="1"><Link to={`/skills/${race}/Orc Raider`}>オークレイダー</Link></td>
+              <td colspan="1"><Link to={`/skills/${race}/Monk`}>オークモンク</Link></td>
             </tr>
             <tr>
               <td><Link to={`/skills/${race}/Destroyer`}>デストロイヤー</Link></td>
@@ -93,7 +93,7 @@ function Race() {
             </tr>
             <tr>
               <td><Link to={`/skills/${race}/Titan`}>タイタン</Link></td>
-              <td><Link to={`/skills/${race}/Grand Khavatari`}>グランド カバタリ</Link></td>
+              <td><Link to={`/skills/${race}/Grand Khavatari`}>グランドカバタリ</Link></td>
             </tr>
           </>
         )}
@@ -104,11 +104,11 @@ function Race() {
               <td colspan="1"><Link to={`/skills/${race}/Artisan`}>アルティザン</Link></td>
             </tr>
             <tr>
-              <td><Link to={`/skills/${race}/Bounty Hunter`}>バウンティー ハンター</Link></td>
+              <td><Link to={`/skills/${race}/Bounty Hunter`}>バウンティーハンター</Link></td>
               <td><Link to={`/skills/${race}/Warsmith`}>ウォースミス</Link></td>
             </tr>
             <tr>
-              <td><Link to={`/skills/${race}/Fortune Seeker`}>フォーチュン シーカー</Link></td>
+              <td><Link to={`/skills/${race}/Fortune Seeker`}>フォーチュンシーカー</Link></td>
               <td><Link to={`/skills/${race}/Maestro`}>マエストロ</Link></td>
             </tr>
           </>
@@ -152,7 +152,7 @@ function Race() {
               <tr>
                 <td><Link to={`/skills/${race}/Archmage`}>アークメイジ</Link></td>
                 <td><Link to={`/skills/${race}/Soultaker`}>ソウルテイカー</Link></td>
-                <td><Link to={`/skills/${race}/Arcana Lord`}>アルカナ ロード</Link></td>
+                <td><Link to={`/skills/${race}/Arcana Lord`}>アルカナロード</Link></td>
                 <td><Link to={`/skills/${race}/Cardinal`}>カーディナル</Link></td>
                 <td><Link to={`/skills/${race}/Hierophant`}>ハイエロファント</Link></td>
               </tr>
@@ -161,43 +161,43 @@ function Race() {
           {race === 'エルフ' && (
             <>
               <tr>
-                <td colspan="2"><Link to={`/skills/${race}/Elven Wizard`}>エルヴン ウィザード</Link></td>
+                <td colspan="2"><Link to={`/skills/${race}/Elven Wizard`}>エルヴンウィザード</Link></td>
                 <td colspan="1"><Link to={`/skills/${race}/Elven Oracle`}>オラクル</Link></td>
               </tr>
               <tr>
                 <td><Link to={`/skills/${race}/Spellsinger`}>スペルシンガー</Link></td>
-                <td><Link to={`/skills/${race}/Elemental Summoner`}>エレメンタル サマナー</Link></td>
+                <td><Link to={`/skills/${race}/Elemental Summoner`}>エレメンタルサマナー</Link></td>
                 <td><Link to={`/skills/${race}/Elven Elder`}>エルダー</Link></td>
               </tr>
               <tr>
-                <td><Link to={`/skills/${race}/Mystic Muse`}>ミスティック ミューズ</Link></td>
-                <td><Link to={`/skills/${race}/Elemental Master`}>エレメンタル マスター</Link></td>
-                <td><Link to={`/skills/${race}/Evas Saint`}>Evas Saint</Link></td>
+                <td><Link to={`/skills/${race}/Mystic Muse`}>ミスティックミューズ</Link></td>
+                <td><Link to={`/skills/${race}/Elemental Master`}>エレメンタルマスター</Link></td>
+                <td><Link to={`/skills/${race}/Evas Saint`}>エヴァスセイント</Link></td>
               </tr>
             </>
           )}
           {race === 'ダークエルフ' && (
             <>
               <tr>
-                <td colspan="2"><Link to={`/skills/${race}/Dark Wizard`}>ダーク ウィザード</Link></td>
-                <td colspan="1"><Link to={`/skills/${race}/Shillien Oracle`}>シリエン オラクル</Link></td>
+                <td colspan="2"><Link to={`/skills/${race}/Dark Wizard`}>ダークウィザード</Link></td>
+                <td colspan="1"><Link to={`/skills/${race}/Shillien Oracle`}>シリエンオラクル</Link></td>
               </tr>
               <tr>
                 <td><Link to={`/skills/${race}/Spellhowler`}>スペルハウラー</Link></td>
-                <td><Link to={`/skills/${race}/Phantom Summoner`}>ファントム サマナー</Link></td>
-                <td><Link to={`/skills/${race}/Shillien Elder`}>シリエン エルダー</Link></td>
+                <td><Link to={`/skills/${race}/Phantom Summoner`}>ファントムサマナー</Link></td>
+                <td><Link to={`/skills/${race}/Shillien Elder`}>シリエンエルダー</Link></td>
               </tr>
               <tr>
-                <td><Link to={`/skills/${race}/Storm Screamer`}>ストーム スクリーマー</Link></td>
-                <td><Link to={`/skills/${race}/Spectral Master`}>スペクトラル マスター</Link></td>
-                <td><Link to={`/skills/${race}/Shillien Saint`}>シリエン セイント</Link></td>
+                <td><Link to={`/skills/${race}/Storm Screamer`}>ストームスクリーマー</Link></td>
+                <td><Link to={`/skills/${race}/Spectral Master`}>スペクトラルマスター</Link></td>
+                <td><Link to={`/skills/${race}/Shillien Saint`}>シリエンセイント</Link></td>
               </tr>
             </>
           )}
           {race === 'オーク' && (
             <>
               <tr>
-                <td colspan="2"><Link to={`/skills/${race}/Orc Shaman`}>オーク シャーマン</Link></td>
+                <td colspan="2"><Link to={`/skills/${race}/Orc Shaman`}>オークシャーマン</Link></td>
               </tr>
               <tr>
                 <td><Link to={`/skills/${race}/Overlord`}>オーバーロード</Link></td>

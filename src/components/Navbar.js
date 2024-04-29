@@ -17,13 +17,13 @@ function Navbar() {
                     <Link to="/skills" className="nav-btn">スキル</Link>
                 </div>
             </div>
-            <div className="dropdown">
+            {/* <div className="dropdown">
                 <button className="dropbtn">ツール</button>
                 <div className="dropdown-content">
                     <Link to="/hunt-timer" className="nav-btn">狩りタイマー</Link>
                     <Link to="/craft-calculator" className="nav-btn">製作計算機</Link>
                 </div>
-            </div>
+            </div> */}
             <Link to="/map" className="nav-btn">マープ</Link>
             <div className="dropdown">
                 <button className="dropbtn">鯖</button>

@@ -14,6 +14,9 @@ import Monsters from './pages/MonstersByLevel';
 import Skills from './pages/SkillsByClass';
 import Race from './pages/Race';
 import MonstersByLevelRange from './pages/MonstersByLevelRange';
+import ClassSkills from './pages/ClassSkills'; // Import ClassSkills
+import QuestsOfLevel from './pages/QuestsOfLevel';
+
 
 import './App.css'
 
@@ -40,10 +43,12 @@ function App() {
                     <Route path="/items/types/:type" element={<ItemsByType />} />
                     <Route path="/map" element={<Map />} />
                     <Route path="/quests" element={<Quests />} />
+                    <Route path="/quests/levels/:range" element={<QuestsOfLevel />} />
                     <Route path="/monsters" element={<Monsters />} />
                     <Route path="/monsters/levels/:range" element={<MonstersByLevelRange />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/skills/:race" element={<Race />} /> {/* Route for each race */}
+                    <Route path="/skills/:race/:className" element={<ClassSkills />} /> {/* Route for each class */}
                   </Routes>
                 </main>
                 <footer>

@@ -22,7 +22,8 @@ const SkillDescription = sequelize.define('SkillDescription', {
   cast_range: DataTypes.INTEGER,
   mp_consume: DataTypes.INTEGER,
   hp_consume: DataTypes.INTEGER,
-  is_magic: DataTypes.TINYINT
+  is_magic: DataTypes.TINYINT,
+  hit_time: DataTypes.DECIMAL(10,1)
 }, {
   tableName: 'skill_descriptions',
   timestamps: false

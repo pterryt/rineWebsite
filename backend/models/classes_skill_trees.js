@@ -1,14 +1,13 @@
 // backend/models/classes_skill_trees.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../db/connection');
-const Class = require('./classes');
 
 const ClassSkillTree = sequelize.define('ClassSkillTree', {
   class_id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     references: {
-      model: Class,
+      model: 'classes', // This should be the table name
       key: 'id'
     }
   },
@@ -21,5 +20,16 @@ const ClassSkillTree = sequelize.define('ClassSkillTree', {
   tableName: 'classes_skill_trees',
   timestamps: false
 });
+
+ClassSkillTree.associate = function(models) {
+  ClassSkillTree.belongsTo(models.SkillDescription, {
+    foreignKey: 'skill_description_id',
+    as: 'skillDescription'
+  });
+  ClassSkillTree.belongsTo(models.Class, {
+    foreignKey: 'class_id',
+    as: 'class'
+  });
+};
 
 module.exports = ClassSkillTree;

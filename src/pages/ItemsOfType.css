@@ -3,12 +3,11 @@
     padding-right: 0px;
 }
 
-table {
+.item-table {
     margin: auto;
     border: 1px solid rgba(192, 192, 192, 0.5); /* Half opacity silver border */
     border-collapse: collapse; /* Add this line */
     width: 100%; /* Take up full available space */
-    max-width: 90%; /* But no more than 80% of the screen width */
     font-size: 10px;
     margin-top: 50px;
 }
@@ -37,14 +36,14 @@ table.items-table td:nth-child(3) {
     margin: auto; /* Center the container */
 }
 
-.wepIcon {
-  border: 2px solid #000; /* Change the color as needed */
-  height: 32px;
-  width: 32px;
-  padding: 0;
-  margin: 0;
 
-}
+.itemIcon {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin: 5px;
+    border-radius: 5px;
+  }
 
 table tr td, table tr th {
     max-height: 32px;

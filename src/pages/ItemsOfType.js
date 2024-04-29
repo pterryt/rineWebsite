@@ -52,7 +52,7 @@ function ItemsOfType() {
     return (
         <div className='parent-container'>
             {category === 'weapon' ? (
-                <table>
+                <table className='item-table'>
                     <thead>
                         <tr>
                             <th className="table-header"></th>
@@ -65,7 +65,7 @@ function ItemsOfType() {
                     <tbody>
                         {items.map(item => (
                             <tr key={item.id}>
-                                <td className='wepIcon'><img src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
+                                <td><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
                                 <td>{item['itemDescription.japanese_name'] ? item['itemDescription.japanese_name'] : item.name}</td>
                                 <td>{item.pAtk}</td>
                                 <td>{item.mAtk}</td>
@@ -88,7 +88,7 @@ function ItemsOfType() {
                     <tbody>
                         {items.map(item => (
                             <tr key={item.id}>
-                                <td><img src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
+                                <td><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
                                 <td>{item['itemDescription.japanese_name'] ? item['itemDescription.japanese_name'] : item.name}</td>                                <td>{item.pAtk}</td>
                                 <td>{item.pDef}</td>
                                 <td>{item.mDef}</td>
@@ -111,7 +111,7 @@ function ItemsOfType() {
                     <tbody>
                         {items.map(item => (
                             <tr key={item.id}>
-                                <td><img src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
+                                <td><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
                                 <td>{item['itemDescription.japanese_name']}</td>
                                 <td>{item['itemDescription.japanese_description']}</td>
                             </tr>
