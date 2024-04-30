@@ -1,7 +1,7 @@
 // pages/QuestsOfLevel.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './QuestsOfLevel.css';
+import './QuestsTable.css';
 
 function QuestsOfLevel() {
   const { range } = useParams();

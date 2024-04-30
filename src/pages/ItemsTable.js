@@ -1,7 +1,7 @@
 // ItemsOfType.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './ItemsOfType.css'; // Import your CSS file
+import './ItemsTable.css'; // Import your CSS file
 
 
 function ItemsOfType() {
@@ -51,7 +51,7 @@ function ItemsOfType() {
 
     return (
         <div className='parent-container'>
-            {category === 'weapon' ? (
+            {category === 'weapons' ? (
                 <table className='item-table'>
                     <thead>
                         <tr>

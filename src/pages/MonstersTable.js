@@ -1,7 +1,7 @@
 // pages/MonstersByLevelRange.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './MonstersByLevelRange.css'; // Import the CSS file
+import './MonstersTable.css'; // Import the CSS file
 
 function MonstersByLevelRange() {
   const [monsters, setMonsters] = useState([]);

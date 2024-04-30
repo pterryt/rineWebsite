@@ -1,7 +1,7 @@
 // src/pages/ClassSkills.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './ClassSkills.css';
+import './SkillsTable.css';
 
 function ClassSkills() {
     const { className } = useParams();

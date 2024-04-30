@@ -1,14 +1,14 @@
 // ItemsByType.js
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import './ItemsByType.css'; // Import the CSS file
+import './ItemTypes.css'; // Import the CSS file
 
 
 function ItemsByType() {
     const { type } = useParams();
 
     const typeMapping = {
-        'weapon': ['sword', 'blunt', 'dagger', 'bow', 'pole', 'dualfist', 'etc'],
+        'weapons': ['sword', 'blunt', 'dagger', 'bow', 'pole', 'dualfist', 'etc'],
         'armor': ['heavy', 'light', 'magic', 'etc'],
         'etcitems': ['materials', 'recipes', 'enchant_scrolls', 'consumables']
     };

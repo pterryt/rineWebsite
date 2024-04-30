@@ -55,7 +55,7 @@ router.get('/type/:category/:itemType', async (req, res) => {
   let additionalSort = [];
 
   switch (category) {
-    case 'weapon':
+    case 'weapons':
       attribute = 'weapon_type';
       additionalSort = ['pAtk', 'ASC'];
       break;
