@@ -12,20 +12,3 @@
     max-width: 32px;
     margin-right: 10px;
 }
-
-.skillTable th {
-    min-width: 40px;
-    text-align: left;
-}
-
-.skillTable a {
-  text-decoration: none;
-  /* Remove underline */
-  color: #d4d4d4;
-  /* Set color to white */
-}
-
-.skillTable a:visited {
-  color: #d4d4d4;
-  /* Set color to white for visited links */
-}

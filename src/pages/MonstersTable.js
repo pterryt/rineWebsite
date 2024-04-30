@@ -24,7 +24,7 @@ function MonstersByLevelRange() {
         <thead>
           <tr>
             <th>レベル</th>
-            <th>モンスター</th>
+            <th className='table-header-name'>モンスター</th>
             <th>体力</th>
             <th>経験値</th>
           </tr>
@@ -33,7 +33,8 @@ function MonstersByLevelRange() {
           {monsters.map(monster => (
             <tr key={monster.id}>
               <td>{monster.level}</td>
-              <Link to={`/monsters/${range}/${monster.id}`}>{monster['npcDescription.japanese_name']}</Link>              <td>{monster.hp}</td>
+              <td className='name-td'><Link to={`/monsters/${range}/${monster.id}`}>{monster['npcDescription.japanese_name']}</Link></td>
+              <td>{monster.hp}</td>
               <td>{monster.exp}</td>
             </tr>
           ))}

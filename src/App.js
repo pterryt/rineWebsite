@@ -48,7 +48,7 @@ function App() {
                         <Route path="/items" element={<Items />} />
                         <Route path="/items/:type" element={<ItemTypes />} />
                         <Route path="/items/:category/:itemType" element={<ItemsTable />} />
-                        <Route path="/items/:category/:itemType/:itemName" element={<Item />} />
+                        <Route path="/items/:category/:itemType/:id" element={<Item />} />
                         <Route path="/map" element={<Map />} />
                         <Route path="/quests" element={<Quests />} />
                         <Route path="/quests/:range" element={<QuestsOfLevel />} />

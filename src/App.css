@@ -116,6 +116,7 @@ input[type="submit"] {
 
 table {
   max-width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 30px;
   line-height: 0;
@@ -141,8 +142,13 @@ table a:visited {
 
 table td {
   text-align: center;
+  border: 1px solid rgba(192, 192, 192, 0.5); /* Half opacity silver border */
+
 }
 
+table th {
+  text-align: center;
+}
 
 .table-header-name {
   text-align: left;

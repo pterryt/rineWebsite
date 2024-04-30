@@ -98,5 +98,32 @@ router.get('/type/:category/:itemType', async (req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const item = await db.Item.findOne({
+      where: { id },
+      attributes: ['id', 'icon', 'name', 'pAtk', 'mAtk', 'pDef', 'mDef', 'crystal_type', 'weight', 'bodypart', 'itemType'],
+      include: [{
+        model: db.ItemDescription,
+        as: 'itemDescription',
+        attributes: ['japanese_name', 'japanese_description'],
+        required: true
+      }],
+      raw: true
+    });
+
+    if (!item) {
+      return res.status(404).json({ message: 'Item not found' });
+    }
+
+    res.json(item);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server Error' });
+  }
+});
+
 
 module.exports = router;

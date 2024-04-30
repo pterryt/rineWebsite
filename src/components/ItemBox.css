@@ -1,0 +1,56 @@
+/* ItemBox.css */
+
+.itemBox-root {
+    line-height: 1;
+    }
+  
+  .itemBox-heading {
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 5px;
+    display: flex;
+  }
+  
+  .itemBox-name {
+    color: #fff;
+    display:flex;
+    align-items: center;
+  }
+  
+  .itemBox-type {
+    color: #a6a6a6;
+    font-size: 13px;
+  }
+  
+  .itemBox-stat {
+    padding-top: 3px;
+    font-size: 13px;
+  }
+  
+  .itemBox-statName {
+    margin-right: 5px;
+  }
+  
+  .itemBox-statValue {
+    color: #fff;
+  }
+  
+  .itemBox-desc {
+    white-space: pre-wrap;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .item-box {
+    min-width: 20%;
+    width: fit-content;
+    padding: 10px;
+  }
+
+  .grade {
+    background-color: black;
+    margin: 0px 0px 0px 12px;
+    padding: 2px 4px 2px 4px;
+    border-radius: 2px;
+    font-size: 9px;
+    vertical-align: center;
+  }

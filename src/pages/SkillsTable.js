@@ -30,8 +30,8 @@ function ClassSkills() {
                 <tr>
                     <th className='levelObt'></th>
                     <th>獲得</th>
-                    <th>スキル</th>
-                    <th>説明</th>
+                    <th className='table-header-name'>スキル</th>
+                    <th className='table-header-name'>説明</th>
                     <th>レベル</th>
                     {/* Add more columns as needed */}
                 </tr>
@@ -41,8 +41,8 @@ function ClassSkills() {
                     <tr key={skill.skill_id}>
                         <td><img className='skillIcon' src={loadIcon(skill.skillDescription.icon)} alt={skill.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
                         <td>{skill.skill_min_level}</td>
-                        <td><Link to={`/skills/${race}/${className}/${skill.id}`}>{skill.skillDescription.japanese_name}</Link></td>
-                        <td>{skill.skillDescription.japanese_description}</td>
+                        <td className='name-td'><Link to={`/skills/${race}/${className}/${skill.id}`}>{skill.skillDescription.japanese_name}</Link></td>
+                        <td className='name-td'>{skill.skillDescription.japanese_description}</td>
                         <td>Lv. {skill.skillDescription.level}</td>
                         {/* Add more cells as needed */}
                     </tr>

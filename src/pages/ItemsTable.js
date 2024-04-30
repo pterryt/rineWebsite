@@ -1,4 +1,4 @@
-// ItemsOfType.js
+// ItemsTable.js
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './ItemsTable.css'; // Import your CSS file

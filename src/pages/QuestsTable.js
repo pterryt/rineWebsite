@@ -16,19 +16,18 @@ function QuestsOfLevel() {
 
   return (
     <div>
-      <h1 className='quest-table-title'>クエスト（{range}）</h1>
       <table className='quest-table'>
         <thead>
           <tr>
             <th>条件</th>
-            <th>クエスト名</th>
+            <th className='table-header-name'>クエスト名</th>
           </tr>
         </thead>
         <tbody>
           {quests.map(quest => (
             <tr key={quest.id}>
               <td>{quest.lvl_min || '-'}</td>
-              <td><Link to={`/quests/${range}/${quest.id}`}>{quest.title_japanese}</Link></td>
+              <td className='name-td'><Link to={`/quests/${range}/${quest.id}`}>{quest.title_japanese}</Link></td>
             </tr>
           ))}
         </tbody>
