@@ -1,23 +1,19 @@
-.table-header {
-    text-align: left;
-    padding-right: 0px;
-}
-
 .item-table {
     margin: auto;
-    border: 1px solid rgba(192, 192, 192, 0.5); /* Half opacity silver border */
-    border-collapse: collapse; /* Add this line */
-    width: 100%; /* Take up full available space */
-    font-size: 10px;
+    border: 1px solid rgba(192, 192, 192, 0.5);
+    border-collapse: collapse;
     margin-top: 50px;
 }
 
 table tr:nth-child(even) {
-    background-color: black; /* Replace with the color you want */
+    background-color: black;
+    /* Replace with the color you want */
 
 }
+
 table tr {
-    border: 1px solid rgba(192, 192, 192, 0.5); /* Half opacity silver border */
+    border: 1px solid rgba(192, 192, 192, 0.5);
+    /* Half opacity silver border */
     height: 32px;
 }
 
@@ -25,17 +21,9 @@ table tr {
     width: 400px;
 }
 
-
 table.items-table td:nth-child(3) {
-    font-size: 0.8em; /* Adjust as needed */
+    font-size: 0.8em;
 }
-
-.parent-container {
-    width: 100%; /* Take up full available space */
-    max-width: 80%; /* But no more than 80% of the screen width */
-    margin: auto; /* Center the container */
-}
-
 
 .itemIcon {
     height: 32px;
@@ -43,14 +31,4 @@ table.items-table td:nth-child(3) {
     padding: 0;
     margin: 5px;
     border-radius: 5px;
-  }
-
-table tr td, table tr th {
-    max-height: 32px;
-    overflow: hidden;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 0px;
 }

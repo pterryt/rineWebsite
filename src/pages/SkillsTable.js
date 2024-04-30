@@ -1,10 +1,10 @@
-// src/pages/ClassSkills.js
+// src/pages/SkillsTable.js
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './SkillsTable.css';
 
 function ClassSkills() {
-    const { className } = useParams();
+    const { className, race } = useParams();
     const [skills, setSkills] = useState([]);
 
     useEffect(() => {
@@ -41,7 +41,7 @@ function ClassSkills() {
                     <tr key={skill.skill_id}>
                         <td><img className='skillIcon' src={loadIcon(skill.skillDescription.icon)} alt={skill.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
                         <td>{skill.skill_min_level}</td>
-                        <td>{skill.skillDescription.japanese_name}</td>
+                        <td><Link to={`/skills/${race}/${className}/${skill.id}`}>{skill.skillDescription.japanese_name}</Link></td>
                         <td>{skill.skillDescription.japanese_description}</td>
                         <td>Lv. {skill.skillDescription.level}</td>
                         {/* Add more cells as needed */}

@@ -12,12 +12,8 @@
   
   .class-list li {
     position: relative; /* Enable absolute positioning for children */
-  }
-  
-  .class-list .level-0 {
-    /* Styles for level 0 classes */
-  }
-  
+  } 
+
   .class-list .level-1 {
     /* Styles for level 1 classes */
     position: absolute;

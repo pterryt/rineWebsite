@@ -1,6 +1,6 @@
-// pages/QuestsOfLevel.js
+// pages/QuestsTable.js
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './QuestsTable.css';
 
 function QuestsOfLevel() {
@@ -28,7 +28,7 @@ function QuestsOfLevel() {
           {quests.map(quest => (
             <tr key={quest.id}>
               <td>{quest.lvl_min || '-'}</td>
-              <td>{quest.title_japanese}</td>
+              <td><Link to={`/quests/${range}/${quest.id}`}>{quest.title_japanese}</Link></td>
             </tr>
           ))}
         </tbody>

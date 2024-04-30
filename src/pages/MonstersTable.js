@@ -1,6 +1,6 @@
-// pages/MonstersByLevelRange.js
+// pages/MonstersTable.js
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom'; // Corrected import
 import './MonstersTable.css'; // Import the CSS file
 
 function MonstersByLevelRange() {
@@ -33,8 +33,7 @@ function MonstersByLevelRange() {
           {monsters.map(monster => (
             <tr key={monster.id}>
               <td>{monster.level}</td>
-              <td>{monster['npcDescription.japanese_name']}</td>
-              <td>{monster.hp}</td>
+              <Link to={`/monsters/${range}/${monster.id}`}>{monster['npcDescription.japanese_name']}</Link>              <td>{monster.hp}</td>
               <td>{monster.exp}</td>
             </tr>
           ))}

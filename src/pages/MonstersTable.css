@@ -1,15 +1,15 @@
 /* MonstersByLevelRange.css */
 
 table {
-    width: 100%;
-  }
-  
-  .monster-table th:first-child,
-  .monster-table td:first-child {
-    padding-left: 10px;
-  }
-  
-  .monster-table th:last-child,
-  .mosnter-table td:last-child {
-    text-align: center;
-  }
+  width: 100%;
+}
+
+.monster-table th:first-child,
+.monster-table td:first-child {
+  padding-left: 10px;
+}
+
+.monster-table th:last-child,
+.mosnter-table td:last-child {
+  text-align: center;
+}

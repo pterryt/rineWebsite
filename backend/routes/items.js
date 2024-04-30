@@ -32,7 +32,7 @@ router.get('/type/etcitems/:type', async (req, res) => {
   try {
     const items = await db.Item.findAll({
       where: { etcitem_type },
-      attributes: ['icon', 'name'],
+      attributes: ['id', 'icon', 'name'],
       include: [{
         model: db.ItemDescription,
         as: 'itemDescription',
@@ -73,7 +73,7 @@ router.get('/type/:category/:itemType', async (req, res) => {
   try {
     const items = await db.Item.findAll({
       where: { [attribute]: itemType, for_npc: null, item_skill: null, is_premium: null, is_droppable: null, is_sellable: null },
-      attributes: ['icon', 'name', 'pAtk', 'mAtk', 'pDef', 'mDef', 'crystal_type'],
+      attributes: ['id', 'icon', 'name', 'pAtk', 'mAtk', 'pDef', 'mDef', 'crystal_type'],
       include: [{
         model: db.ItemDescription,
         as: 'itemDescription',

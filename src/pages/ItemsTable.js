@@ -1,6 +1,6 @@
 // ItemsOfType.js
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './ItemsTable.css'; // Import your CSS file
 
 
@@ -9,6 +9,23 @@ function ItemsOfType() {
     const { category, itemType } = useParams();
     const [sortConfig, setSortConfig] = useState(null); // State to keep track of the current sort configuration
 
+    const displayNameMapping = {
+        'sword': '剣',
+        'blunt': '鈍器',
+        'dagger': '短剣',
+        'bow': '弓',
+        'pole': '槍',
+        'dual': '双剣',
+        'dualfist': '拳',
+        'etc': 'その他',
+        'light': '軽装',
+        'heavy': '重装',
+        'magic': 'ローブ',
+        'materials': '材質',
+        'recipes': '製作図',
+        'enchant_scrolls': '強化スクロール',
+        'consumables': '消耗品',
+    };
     // const icons = require.context('../assets/Icons', true, /\.png$/);
 
     // Function to handle sorting
@@ -55,8 +72,8 @@ function ItemsOfType() {
                 <table className='item-table'>
                     <thead>
                         <tr>
-                            <th className="table-header"></th>
-                            <th className="table-header" onClick={() => sortItems('itemDescription.japanese_name')}></th>
+                            <th className="table-header-icon"></th>
+                            <th className="table-header-name" onClick={() => sortItems('itemDescription.japanese_name')}>{displayNameMapping[itemType]}</th>
                             <th className="table-header" onClick={() => sortItems('pAtk')}>攻撃力</th>
                             <th className="table-header" onClick={() => sortItems('mAtk')}>魔法力</th>
                             <th className="table-header" onClick={() => sortItems('crystal_type')}>等級</th>
@@ -65,8 +82,8 @@ function ItemsOfType() {
                     <tbody>
                         {items.map(item => (
                             <tr key={item.id}>
-                                <td><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
-                                <td>{item['itemDescription.japanese_name'] ? item['itemDescription.japanese_name'] : item.name}</td>
+                                <td className='icon-td'><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
+                                <td className='name-td'><Link to={`/items/${category}/${itemType}/${item.id}`}>{item['itemDescription.japanese_name'] ? item['itemDescription.japanese_name'] : item.name}</Link></td>
                                 <td>{item.pAtk}</td>
                                 <td>{item.mAtk}</td>
                                 <td>{item.crystal_type}</td>
@@ -78,8 +95,8 @@ function ItemsOfType() {
                 <table>
                     <thead>
                         <tr>
-                            <th className="table-header"></th>
-                            <th className="table-header"></th>
+                            <th className="table-header-icon"></th>
+                            <th className="table-header-name">{displayNameMapping[itemType]}</th>
                             <th className="table-header">防御力</th>
                             <th className="table-header">魔法抵抗力</th>
                             <th className="table-header">等級</th>
@@ -88,12 +105,11 @@ function ItemsOfType() {
                     <tbody>
                         {items.map(item => (
                             <tr key={item.id}>
-                                <td><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
-                                <td>{item['itemDescription.japanese_name'] ? item['itemDescription.japanese_name'] : item.name}</td>                                <td>{item.pAtk}</td>
+                                <td className='icon-td'><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
+                                <td className='name-td'><Link to={`/items/${category}/${itemType}/${item.id}`}>{item['itemDescription.japanese_name'] ? item['itemDescription.japanese_name'] : item.name}</Link></td>
                                 <td>{item.pDef}</td>
                                 <td>{item.mDef}</td>
                                 <td>{item.crystal_type}</td>
-
                             </tr>
                         ))}
                     </tbody>
@@ -104,7 +120,7 @@ function ItemsOfType() {
                     <thead>
                         <tr>
                             <th></th>
-                            <th onClick={() => sortItems('itemDescription.japanese_name')}>アイテム</th>
+                            <th className='table-header-name' onClick={() => sortItems('itemDescription.japanese_name')}>{displayNameMapping[itemType]}</th>
                             <th className='etcDescription'>説明</th>
                         </tr>
                     </thead>
@@ -112,8 +128,7 @@ function ItemsOfType() {
                         {items.map(item => (
                             <tr key={item.id}>
                                 <td><img className='itemIcon' src={loadIcon(item.icon)} alt={item.name} onError={(e) => { e.target.onerror = null; e.target.src = `${process.env.PUBLIC_URL}/default.png` }} /></td>
-                                <td>{item['itemDescription.japanese_name']}</td>
-                                <td>{item['itemDescription.japanese_description']}</td>
+                                <td className='name-td'><Link to={`/items/${category}/${itemType}/${item.id}`}>{item['itemDescription.japanese_name']}</Link></td>                                <td>{item['itemDescription.japanese_description']}</td>
                             </tr>
                         ))}
                     </tbody>

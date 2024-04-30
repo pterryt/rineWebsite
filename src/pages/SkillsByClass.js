@@ -1,4 +1,4 @@
-// pages/SkillsByRace.js
+// pages/SkillsByClass.js
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import RaceList from '../components/RaceList';

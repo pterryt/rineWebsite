@@ -23,7 +23,7 @@ router.get('/level/:range', async (req, res) => {
                     [db.Sequelize.Op.between]: [minLevel, maxLevel]
                 }
             },
-            attributes: ['name', 'title', 'exp', 'sp', 'level', 'hp', 'pAtk', 'mAtk', 'pDef', 'mDef', 'crit', 'atkSpd', 'corpseTime', 'dropHerbGroup', 'aggro'],
+            attributes: ['id', 'name', 'title', 'exp', 'sp', 'level', 'hp', 'pAtk', 'mAtk', 'pDef', 'mDef', 'crit', 'atkSpd', 'corpseTime', 'dropHerbGroup', 'aggro'],
             include: [{
                 model: db.NpcDescription,
                 as: 'npcDescription',

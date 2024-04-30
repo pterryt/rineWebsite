@@ -6,3 +6,15 @@
     text-align: center;
     margin: auto;
 }
+
+.quest-table a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #d4d4d4;
+    /* Set color to white */
+}
+
+.quest-table a:visited {
+    color: #d4d4d4;
+    /* Set color to white for visited links */
+}

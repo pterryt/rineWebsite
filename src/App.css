@@ -118,6 +118,8 @@ table {
   max-width: 90%;
   margin: auto;
   margin-top: 30px;
+  line-height: 0;
+  font-size: 12px;
 }
 
 th {
@@ -125,5 +127,37 @@ th {
   top: 0;
   background-color: #121212;
   border: 1px solid rgba(192, 192, 192, 0.5); /* Half opacity silver border */
+}
 
+table a {
+  text-decoration: none;
+  color: #d4d4d4;
+}
+
+table a:visited {
+  color: #d4d4d4;
+  /* Set color to white for visited links */
+}
+
+table td {
+  text-align: center;
+}
+
+
+.table-header-name {
+  text-align: left;
+  padding-left: .5em;
+}
+
+.table-header-icon {
+  max-width: 32px;
+}
+
+.icon-td {
+  width: 32px;
+}
+
+.name-td {
+  text-align: left;
+  padding-left: .5em;
 }

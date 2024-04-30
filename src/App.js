@@ -9,16 +9,20 @@ import icon from './assets/temp_icon_4.png';
 import Items from './pages/ItemCategories';
 import ItemTypes from './pages/ItemTypes';
 import ItemsTable from './pages/ItemsTable';
+import Item from './pages/Item';
 //skills
 import Skills from './pages/Skills';
 import SkillsByClass from './pages/SkillsByClass';
 import SkillsTable from './pages/SkillsTable';
+import Skill from './pages/Skill';
 //monsters
 import Monsters from './pages/MonstersByLevel';
 import MonstersTable from './pages/MonstersTable';
+import Monster from './pages/Monster';
 //quests
 import Quests from './pages/QuestsByLevel';
 import QuestsOfLevel from './pages/QuestsTable';
+import Quest from './pages/Quest';
 
 
 import './App.css'
@@ -36,23 +40,27 @@ function App() {
                         </form>
                     </div>
 
-                    </header>
-                                        <Navbar />
+                </header>
+                <Navbar />
                 <main>
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/items" element={<Items />} /> {/* Route for main items page */}
-                    <Route path="/items/:type" element={<ItemTypes />} />
-                    <Route path="/items/:category/:itemType" element={<ItemsTable />} />
-                    <Route path="/map" element={<Map />} />
-                    <Route path="/quests" element={<Quests />} />
-                    <Route path="/quests/:range" element={<QuestsOfLevel />} />
-                    <Route path="/monsters" element={<Monsters />} />
-                    <Route path="/monsters/:range" element={<MonstersTable />} />
-                    <Route path="/skills" element={<Skills />} />
-                    <Route path="/skills/:race" element={<SkillsByClass />} /> {/* Route for each race */}
-                    <Route path="/skills/:race/:className" element={<SkillsTable />} /> {/* Route for each class */}
-                  </Routes>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/items" element={<Items />} />
+                        <Route path="/items/:type" element={<ItemTypes />} />
+                        <Route path="/items/:category/:itemType" element={<ItemsTable />} />
+                        <Route path="/items/:category/:itemType/:itemName" element={<Item />} />
+                        <Route path="/map" element={<Map />} />
+                        <Route path="/quests" element={<Quests />} />
+                        <Route path="/quests/:range" element={<QuestsOfLevel />} />
+                        <Route path="/quests/:range/:questName" element={<Quest />} />
+                        <Route path="/monsters" element={<Monsters />} />
+                        <Route path="/monsters/:range" element={<MonstersTable />} />
+                        <Route path="/monsters/:range/:monsterName" element={<Monster />} />
+                        <Route path="/skills" element={<Skills />} />
+                        <Route path="/skills/:race" element={<SkillsByClass />} />
+                        <Route path="/skills/:race/:className" element={<SkillsTable />} />
+                        <Route path="/skills/:race/:className/:skillName" element={<Skill />} />
+                    </Routes>
                 </main>
                 <footer>
                     {/* Your Footer goes here */}
