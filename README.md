@@ -1,6 +1,6 @@
 ## Introduction
 
-This website is a proof of concept for a database visualizer web app written entirely in Javascript. (React + Node.js)
+This repository is a proof of concept for a database visualizer web app written entirely in Javascript. (React + Node.js)
 
 
 Current implementation includes:
