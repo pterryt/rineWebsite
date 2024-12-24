@@ -1,10 +1,9 @@
-## Introduction
+# Database Visualizer Web App
 
-This repository is a proof of concept for a database visualizer web app written entirely in Javascript. (React + Node.js)
+This repository is a proof of concept for a database visualizer web app, built entirely with JavaScript using React and Node.js.
 
-
-Current implementation includes:
-- React frontend routing
-- Node backend routing
-- Sequelizer as a database ORM
-- Simple styling with Javascript/HTML/CSS
+### Current Features
+- **Frontend**: React-based routing for navigation.
+- **Backend**: Node.js for server-side routing.
+- **Database ORM**: Sequelize for database interactions.
+- **Styling**: Simple design using JavaScript, HTML, and CSS.
