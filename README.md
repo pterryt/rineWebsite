@@ -1,6 +1,6 @@
 # Database Visualizer Web App
 
-This repository is a proof of concept for a database visualizer web app, built entirely with JavaScript using React and Node.js.
+This repository host the rineWebsite database web visualizer, built entirely with JavaScript using React and Node.js.
 
 ### Current Features
 - **Frontend**: React-based routing for navigation.
