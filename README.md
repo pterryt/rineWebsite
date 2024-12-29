@@ -1,4 +1,4 @@
-# Database Visualizer Web App
+# rineWebsite
 
 This repository host the rineWebsite database web visualizer, built entirely with JavaScript using React and Node.js.
 
